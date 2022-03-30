@@ -1,16 +1,12 @@
-
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 SECRET_KEY = 'django-insecure-4eh=y15_rbi1s*3xs28o)6x-eh==!74b5ra@1qh8y2wpbme2c&'
 
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -52,15 +48,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'portfolio_django.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 DATABASES = {
 
     'default': {
@@ -81,9 +68,6 @@ DATABASES = {
 
 }
 
-# Password validation
-# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -97,27 +81,18 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
+
+
 ]
-
-
-# Internationalization
-# https://docs.djangoproject.com/en/4.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Dhaka'
 
 USE_I18N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
-
 STATIC_URL = 'static/'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
